@@ -1,0 +1,143 @@
+@use "../abstracts";
+.header {
+    background: #fffae3;
+}
+.top-bar {
+    display: flex;
+    align-items: center;
+    padding: 37px 0;
+
+    &__more {
+        margin-left: auto;
+    }
+}
+.navbar {
+    margin-left: 316px;
+    @include abstracts.screen(xl) {
+        margin-left: 170px;
+    }
+    @include abstracts.screen(lg) {
+        margin-left: 70px;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+        @include abstracts.screen(lg) {
+            gap: 20px;
+        }
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        font-weight: 400;
+        line-height: 175%;
+    }
+    &__icon {
+        margin-top: 3px;
+    }
+}
+
+.top-act {
+    margin-left: auto;
+    display: flex;
+    gap: 30px;
+}
+.hero {
+    margin-top: 52px;
+
+    &__lable {
+        color: #572af8;
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 166.667%;
+        letter-spacing: 3.6px;
+    }
+    &__title {
+        margin-top: 12px;
+        font-size: 7.4rem;
+        font-weight: 600;
+        line-height: 100%;
+        &-icon {
+            @include abstracts.screen(lg) {
+                width: 34px;
+                height: 34px;
+            }
+        }
+    }
+    &__desc {
+        margin-top: 18px;
+
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 166.667%;
+    }
+    &__form {
+        margin-top: 38px;
+
+        &-group {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            @include abstracts.screen(md) {
+                flex-wrap: wrap;
+            }
+        }
+        &-input-group {
+            background: #fff;
+            width: 310px;
+            height: 60px;
+            border-radius: 6px;
+            border: 1px solid #191720;
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            padding: 18px 0 18px 13px;
+            @include abstracts.screen(md) {
+                width: 100%;
+            }
+        }
+        &-input {
+            width: 100%;
+            height: 100%;
+            &::placeholder {
+                font-size: 1.6rem;
+                color: #575363;
+                line-height: 175%;
+            }
+        }
+        &-btn {
+            height: 60px;
+            @include abstracts.screen(md) {
+                width: 100%;
+            }
+        }
+    }
+    &__download {
+        margin-top: 38px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        &-lable {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 150%;
+        }
+        &-group {
+            width: 48px;
+            height: 48px;
+            border: 1px solid #191720;
+            border-radius: 50%;
+            background: #fff;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__bg {
+        width: 100%;
+    }
+}
