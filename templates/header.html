@@ -3,28 +3,51 @@
         <!-- logo -->
         <div class="logo">
             <span class="logo__text">F</span>
-            <img class="logo__icon" src="../asset/icons/logo-1.svg" alt="" />
-            <img class="logo__icon" src="../asset/icons/logo-icon2.svg" alt="" />
+            <img class="logo__icon" src="./asset/icons/logo-1.svg" alt="" />
+            <img class="logo__icon" src="./asset/icons/logo-icon2.svg" alt="" />
             <span class="logo__text">DEAST</span>
         </div>
 
         <!-- navbar -->
-        <nav class="navbar d-md-none d-flex">
+        <nav class="navbar">
+            <img src="./asset/icons/arrow-left.svg" alt="" class="d-none d-lg-block navbar__arrow-left" />
             <ul class="navbar__list">
-                <li>
+                <li class="navbar__item">
                     <a href="#!" class="navbar__link">Get the app</a>
                 </li>
-                <li>
+                <li class="navbar__item">
                     <a href="#!" class="navbar__link">About</a>
                 </li>
-                <li>
+                <li class="navbar__item">
                     <a href="#!" class="navbar__link">
                         Page
-                        <img src="../asset/icons/arrow-down.svg" alt="" class="navbar__icon" />
+                        <img src="./asset/icons/arrow-down.svg" alt="" class="navbar__icon" />
+                        <!-- navbar-dropdown -->
+                        <div class="navbar__dropdown">
+                            <ul class="navbar__dropdown-list">
+                                <li class="navbar__dropdown-item">
+                                    <a href="" class="navbar__dropdown-link">Blog</a>
+                                </li>
+                                <li class="navbar__dropdown-item">
+                                    <a href="" class="navbar__dropdown-link">FAQ</a>
+                                </li>
+                                <li class="navbar__dropdown-item">
+                                    <a href="" class="navbar__dropdown-link">Contact</a>
+                                </li>
+                                <li class="navbar__dropdown-item">
+                                    <a href="" class="navbar__dropdown-link">Coming Soon</a>
+                                </li>
+                            </ul>
+                        </div>
                     </a>
                 </li>
             </ul>
+            <div class="d-none d-md-flex top-act">
+                <a class="btn btn--normal top-act__link" href="">Sign In</a>
+                <a class="btn btn--primary top-act__link" href="">Sign Up</a>
+            </div>
         </nav>
+        <div class="navbar__overley"></div>
 
         <!-- act -->
         <div class="top-act d-md-none d-flex">
@@ -33,10 +56,7 @@
         </div>
 
         <!-- More -->
-        <img src="../asset/icons/more.svg" alt="" class="top-bar__more d-none d-md-block" />
-        <div class="top-menu">
-            
-        </div>
+        <img src="./asset/icons/more.svg" alt="" class="top-bar__more d-none d-lg-block" />
     </div>
     <!-- hero -->
     <div class="hero">
@@ -47,9 +67,9 @@
                     <span class="hero__lable">#The Best in Town</span>
                     <h2 class="hero__title">
                         Get food
-                        <img class="hero__title-icon" src="../asset/icons/title-icon1.svg" alt="" />
+                        <img class="hero__title-icon" src="./asset/icons/title-icon1.svg" alt="" />
                         delivery and more
-                        <img class="hero__title-icon" src="../asset/icons/title-icon2.svg" alt="" />
+                        <img class="hero__title-icon" src="./asset/icons/title-icon2.svg" alt="" />
                     </h2>
                     <p class="hero__desc">You want it. We get it. Food, drinks, groceries, and more available for delivery and pickup.</p>
 
@@ -57,7 +77,7 @@
                     <form action="" class="hero__form">
                         <div class="hero__form-group">
                             <div class="hero__form-input-group">
-                                <img src="../asset/icons/location.svg" alt="" class="hero__form-icon" />
+                                <img src="./asset/icons/location.svg" alt="" class="hero__form-icon" />
                                 <input type="text" placeholder="Location or zip code" class="hero__form-input" />
                             </div>
                             <button class="btn btn--primary hero__form-btn">Explore</button>
@@ -68,10 +88,10 @@
                     <div class="hero__download">
                         <span class="hero__download-lable">Get the app:</span>
                         <div class="hero__download-group">
-                            <img src="../asset/icons/android.svg" alt="" />
+                            <img src="./asset/icons/android.svg" alt="" />
                         </div>
                         <div class="hero__download-group">
-                            <img src="../asset/icons/ios.svg" alt="" />
+                            <img src="./asset/icons/ios.svg" alt="" />
                         </div>
                     </div>
                 </div>
@@ -79,7 +99,7 @@
             <div class="col">
                 <!-- hero-img -->
                 <div class="hero__img">
-                    <img src="../asset/img/hego-img/bg.svg" alt="" class="hero__bg" />
+                    <img src="./asset/img/hego-img/bg.svg" alt="" class="hero__bg" />
                 </div>
             </div>
         </div>

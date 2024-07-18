@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Food delivery</title>
 
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="./asset/favicon/apple-touch-icon.png" />
@@ -30,11 +30,61 @@
         <script>
             load("#header", "./templates/header.html");
         </script>
+        <main class="container home">
+            <section class="service">
+                <div class="service__heading">
+                    <h2 class="service__title">Your everyday, right away</h2>
+                    <p class="service__subtitle">Order food and grocery delivery online from hundreds of restaurants and shops nearby.</p>
+                </div>
+                <div class="service__list">
+                    <div class="row row-cols-3 row-cols-lg-1">
+                        <div class="col">
+                            <div class="service__card">
+                                <img src="./asset/img/services/card-thumb1.png" alt="" class="service__thumb" />
+                                <p class="service__name">Food Items</p>
+                                <p class="service__desc">Find deals, free delivery, and more from our restaurant partners.</p>
+                                <a href="" class="service__act">Explore</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="service__card">
+                                <img src="./asset/img/services/card-thumb2.png" alt="" class="service__thumb" />
+                                <p class="service__name">Food Items</p>
+                                <p class="service__desc">Find deals, free delivery, and more from our restaurant partners.</p>
+                                <a href="" class="service__act">Explore</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="service__card">
+                                <img src="./asset/img/services/card-thumb-3.png" alt="" class="service__thumb" />
+                                <p class="service__name">Food Items</p>
+                                <p class="service__desc">Find deals, free delivery, and more from our restaurant partners.</p>
+                                <a href="" class="service__act">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <!-- footer -->
         <footer id="footer" class="footer"></footer>
         <script>
             load("#footer", "./templates/footer.html");
+        </script>
+        <script>
+            const navbar = document.querySelector(".navbar");
+            const moreIcon = document.querySelector(".top-bar__more");
+            const navOverlay = document.querySelector(".navbar__overley");
+            const navClose = document.querySelector(".navbar__arrow-left");
+            moreIcon.addEventListener("click", function () {
+                navbar.classList.add("show");
+                navOverlay.classList.add("show");
+            });
+            navClose.addEventListener("click", function () {
+                navbar.classList.remove("show");
+                navOverlay.classList.remove("show");
+            });
         </script>
     </body>
 </html>
